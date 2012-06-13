@@ -1,0 +1,6 @@
+<%= semantic_form_for [:admin, @video] do |f| %>
+    <%= f.inputs :category, :title, :image_url, :video_url %>
+    <%= f.label :tag_tokens, "Tags" %><br />
+    <%= text_field_tag :tag_tokens,"", "data-pre" => @video.tags.map(&:attributes).to_json %>
+    <%= f.buttons :commit %>
+<% end %>

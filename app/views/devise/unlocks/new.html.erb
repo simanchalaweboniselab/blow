@@ -1,0 +1,13 @@
+<h2 xmlns="http://www.w3.org/1999/html">Resend unlock instructions</h2>
+<div class="span4">
+  <%= form_for(resource, :as => resource_name, :url => unlock_path(resource_name), :html => { :method => :post, :class => "form-horizontal" }) do |f| %>
+      <%= devise_error_messages! %>
+      <div class="control-group">
+        <label class="control-label"><%= f.label :email %><br /></label>
+        <div class="controls"><%= f.email_field :email %></div>
+      </div>
+      <div class="form-actions"><%= f.submit "Resend unlock instructions" %></div>
+      </fieldset>
+  <% end %>
+  <%= render "links" %>
+</div>

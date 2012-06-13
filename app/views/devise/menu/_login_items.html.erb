@@ -1,0 +1,20 @@
+<h5>
+  </br>
+  <%= link_to "Video", videos_path %>
+  <% if user_signed_in? %>
+      <div style="float: right;">
+        signed in as <span class="label label-info"><%= current_user.first_name %></span>. Not you?
+        <%= link_to 'Edit_profile', edit_user_registration_path %>&nbsp; &nbsp;
+        <%= link_to 'Sign_out', destroy_user_session_path , :method => 'delete' %>&nbsp; &nbsp;&nbsp; &nbsp;
+      </div>
+  <% else %>
+
+      <div style="float: right;">
+        <%= link_to 'Sign_in', new_user_session_path %> &nbsp; &nbsp;
+        <%= link_to 'Sign_up', new_user_registration_path %>
+      </div>
+  <% end %>
+</h5>
+<% flash.each do |name, msg| %>
+    <span class="label label-info"> <%= msg %> </span>
+<% end %>

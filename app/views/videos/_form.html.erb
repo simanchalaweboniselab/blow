@@ -1,0 +1,41 @@
+<%= form_for(@video) do |f| %>
+    <% if @video.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@video.errors.count, "error") %> prohibited this category from being saved:</h2>
+
+          <ul>
+            <% @video.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+    <div class="field">
+      <%= f.label :title %><br />
+      <%= f.text_field :title %>
+    </div>
+    <div class="field">
+      <%= f.label :video_url %><br />
+      <%= f.text_field :video_url %>
+    </div>
+    <div class="field">
+      <%= f.label :image_url %><br />
+      <%= f.text_field :image_url %>
+    </div>
+    <p>
+      Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <%=  select("category", "id",@categories.map {|c| [ c.name, c.id ] }, {:include_blank => 'select category'})%>
+    </p>
+    <p>
+      <%= f.label :tag_tokens, "Tags" %><br />
+      <%= text_field_tag :tag_tokens,"", "data-pre" => @video.tags.map(&:attributes).to_json %>
+    </p>
+
+
+    <!--<#%= f.fields_for :tags do |tag_form| %>-->
+        <!--<#%= tag_form.label :name %>-->
+        <!--<#%= tag_form.text_field :name %>-->
+    <!--<#% end %>-->
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

@@ -1,0 +1,32 @@
+<!--<h1>Video list</h1>-->
+
+<!--<table>-->
+<!--<tr>-->
+<!--<th>Title</th>-->
+<!--<th>Source</th>-->
+<!--<th>Image</th>-->
+<!--<th></th>-->
+<!--<th></th>-->
+<!--<th></th>-->
+<!--</tr>-->
+
+<!--<#% @videos.each do |video| %>-->
+<!--<tr>-->
+<!--<td><#%= video.title %></td>-->
+<!--<td><#%= video.video_url %></td>-->
+<!--<td><#%= image_tag(video.image_url, :size => "60x60") %></td>-->
+<!--<td><#%= link_to 'Show', video %></td>-->
+<!--<td><#%= link_to 'Edit', edit_video_path(video) %></td>-->
+<!--<td><#%= link_to 'Destroy', video, confirm: 'Are you sure?', method: :delete %></td>-->
+<!--</tr>-->
+<!--<#% end %>-->
+<!--</table>-->
+<!--</div>-->
+<!--<#%= link_to 'Add', new_video_path %>-->
+<% @videos.each do |video| %>
+    <div class="video" style="float: left">
+      <div class="title"><%= video.title %></div>
+      <%= image_tag(video.image_url, :size => "100x100") %> &nbsp; &nbsp;
+    </div>
+<% end %>
+<%= link_to 'Add Video', new_video_path, :class => "btn btn-success" %>

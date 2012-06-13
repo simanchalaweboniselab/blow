@@ -1,0 +1,5 @@
+
+<p>Welcome <%= @resource.first_name %> in Blow Hip Hop </p>
+<p>For confirmation of your account click on link below:</p>
+
+<p><%= link_to 'Confirm', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %></p>

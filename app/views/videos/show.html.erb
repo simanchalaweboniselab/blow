@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <b>Ttile:</b>
+  <%= @video.title %> </br>
+  <b>Video_url:</b>
+  <%= @video.video_url %> </br>
+  <b>Image_url:</b>
+  <%= @video.image_url %>
+</p>
+<%= link_to 'Edit', edit_video_path(@video) %> |
+<%= link_to 'Back', videos_path %>

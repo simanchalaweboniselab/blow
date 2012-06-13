@@ -1,0 +1,27 @@
+<h2>Sign in</h2>
+<div class="span4">
+  <%= form_for(resource, :as => resource_name,:html => { :class => "form-horizontal"}, :url => session_path(resource_name)) do |f| %>
+      <fieldset>
+        <div class="control-group">
+          <label class="control-label"><%= f.label :email %></label>
+          <div class="controls"><%= f.email_field :email %></div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label"><%= f.label :password %></label>
+          <div class="controls"> <%= f.password_field :password %></div>
+        </div>
+
+        <% if devise_mapping.rememberable? -%>
+            <div class="control-group">
+              <label class="control-label"><%= f.check_box :remember_me %></label></br>
+              <div class="controls"> <%= f.label :remember_me %></div>
+            </div>
+        <% end -%>
+
+        <div class="form-actions"><%= f.submit "Sign in", :class => "btn btn-primary" %></div>
+      </fieldset>
+  <% end %>
+
+  <%= render "links" %>
+</div>
