@@ -65,7 +65,8 @@ Blow::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
   #config.assets.precompile += %w[*.css,*.js]
-  #config.assets.precompile = %w{application.css}
+  config.assets.precompile = %w{application.css}
+  config.assets.precompile = %w{application.js}
   #config.assets.precompile = %w{active_admin.css.scss}
 end
 
