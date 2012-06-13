@@ -34,7 +34,7 @@
       <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="18" selection-start="709" selection-end="709" vertical-scroll-proportion="0.0">
+            <state line="27" column="17" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -43,7 +43,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="32" selection-start="323" selection-end="323" vertical-scroll-proportion="0.25104022">
+            <state line="41" column="17" selection-start="849" selection-end="849" vertical-scroll-proportion="0.70873785">
               <folding />
             </state>
           </provider>
@@ -122,7 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/admin/tags.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api_controller.rb" />
         <option value="$PROJECT_DIR$/config/initializers/mime_types.rb" />
@@ -137,6 +136,7 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/apis_controller.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
@@ -836,13 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="18" selection-start="709" selection-end="709" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="0" selection-start="1851" selection-end="1851" vertical-scroll-proportion="0.0">
@@ -857,9 +850,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="17" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="32" selection-start="323" selection-end="323" vertical-scroll-proportion="0.25104022">
+        <state line="41" column="17" selection-start="849" selection-end="849" vertical-scroll-proportion="0.70873785">
           <folding />
         </state>
       </provider>

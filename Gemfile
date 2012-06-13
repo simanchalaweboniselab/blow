@@ -5,7 +5,7 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql'
+gem 'mysql2'
 
 
 # Gems used only for assets and not required
@@ -39,7 +39,7 @@ gem 'jquery-rails'
 group :development do
   gem 'hirb'
 end
-group :development do
+group :production do
   gem 'pg'
   gem 'therubyracer'
   gem 'thin'
