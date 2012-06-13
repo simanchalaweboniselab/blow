@@ -52,7 +52,7 @@
       <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="0" selection-start="2603" selection-end="2603" vertical-scroll-proportion="0.8751734">
+            <state line="66" column="43" selection-start="2490" selection-end="2490" vertical-scroll-proportion="0.7919556">
               <folding />
             </state>
           </provider>
@@ -70,7 +70,7 @@
       <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="5" selection-start="2756" selection-end="2756" vertical-scroll-proportion="0.0">
+            <state line="57" column="50" selection-start="2750" selection-end="2750" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,8 +128,8 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
@@ -744,13 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="5" selection-start="2756" selection-end="2756" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.18723994">
@@ -758,9 +751,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="50" selection-start="2750" selection-end="2750" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="2603" selection-end="2603" vertical-scroll-proportion="0.8751734">
+        <state line="66" column="43" selection-start="2490" selection-end="2490" vertical-scroll-proportion="0.7919556">
           <folding />
         </state>
       </provider>
