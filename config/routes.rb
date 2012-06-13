@@ -10,12 +10,23 @@ Blow::Application.routes.draw do
   resources :categories
   resources :videos
   resources :tags
-  resources :apis do
-    collection do
-      post 'sign_in'
-    end
-    collection do
-      put 'reset_password'
+  scope :module => "api" do
+    resources :apis do
+      collection do
+        post 'sign_in'
+      end
+      collection do
+        put 'reset_password'
+      end
+      collection do
+        get 'video_search'
+      end
+      collection do
+        get 'tag_search'
+      end
+      collection do
+        get 'category_search'
+      end
     end
   end
 

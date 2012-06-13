@@ -39,6 +39,11 @@ gem 'jquery-rails'
 group :development do
   gem 'hirb'
 end
+group :development do
+  gem 'pg'
+  gem 'therubyracer'
+  gem 'thin'
+end
 gem 'devise'
 gem 'omniauth-facebook'
 gem "twitter-bootstrap-rails", "~> 2.0.9"
