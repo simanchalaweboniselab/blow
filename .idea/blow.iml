@@ -37,7 +37,6 @@
     <orderEntry type="library" scope="PROVIDED" name="libv8 (v3.3.10.4, Ruby SDK 1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.4.4, Ruby SDK 1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.18, Ruby SDK 1.8.7-p358) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mysql (v2.8.1, Ruby SDK 1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.0.7, Ruby SDK 1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.3, Ruby SDK 1.8.7-p358) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.4.1, Ruby SDK 1.8.7-p358) [gem]" level="application" />

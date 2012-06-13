@@ -41,8 +41,7 @@ group :development do
 end
 group :production do
   gem 'pg'
-  gem 'therubyracer'
-  gem 'thin'
+  #gem 'thin'
 end
 gem 'devise'
 gem 'omniauth-facebook'
