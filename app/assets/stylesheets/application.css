@@ -12,6 +12,8 @@
  *= require bootstrap_and_overrides
  *= require categories
  *= require videos
+ *= require tags
+ *= require apis
  *= require token-input
  *= require token-input-facebook
  *= require token-input-mac
