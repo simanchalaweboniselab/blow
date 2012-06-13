@@ -61,7 +61,7 @@
       <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="5" selection-start="2756" selection-end="2756" vertical-scroll-proportion="0.8335645">
+            <state line="58" column="5" selection-start="2757" selection-end="2757" vertical-scroll-proportion="0.8335645">
               <folding />
             </state>
           </provider>
@@ -118,10 +118,10 @@
         <option value="$PROJECT_DIR$/app/controllers/api/apis_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
       </list>
     </option>
   </component>
@@ -709,7 +709,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="5" selection-start="2756" selection-end="2756" vertical-scroll-proportion="0.8335645">
+        <state line="58" column="5" selection-start="2757" selection-end="2757" vertical-scroll-proportion="0.8335645">
           <folding />
         </state>
       </provider>
