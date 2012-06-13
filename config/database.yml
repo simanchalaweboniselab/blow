@@ -32,4 +32,4 @@ production:
   username: root
   password: webonise6186
   timeout: 5000
-  socket: /var/run/mysqld/mysqld.sock
+#  socket: /var/run/mysqld/mysqld.sock
