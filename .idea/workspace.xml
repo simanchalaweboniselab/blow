@@ -31,19 +31,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="development.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="development.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="19" selection-start="1836" selection-end="1836" vertical-scroll-proportion="0.0">
+            <state line="49" column="38" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.75838923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="77" selection-start="2571" selection-end="2571" vertical-scroll-proportion="0.67785233">
+            <state line="67" column="77" selection-start="2571" selection-end="2571" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,6 +69,7 @@
         <option value="$PROJECT_DIR$/public/assets/active_admin/components/_date_picker.css" />
         <option value="$PROJECT_DIR$/public/assets/active_admin/components/_date_picker-b0633c76b409c81645b136e907c725ef.css" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/config/environments/development.rb" />
       </list>
     </option>
   </component>
@@ -371,16 +372,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="19" selection-start="1836" selection-end="1836" vertical-scroll-proportion="0.0">
+        <state line="67" column="77" selection-start="2571" selection-end="2571" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="77" selection-start="2571" selection-end="2571" vertical-scroll-proportion="0.67785233">
+        <state line="49" column="38" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.75838923">
           <folding />
         </state>
       </provider>
