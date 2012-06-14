@@ -65,7 +65,8 @@ Blow::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
   config.assets.precompile += %w( *.css *.js )
-  config.action_mailer.default_url_options = { :host => 'blowhiphop.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'blowhiphop.heroku.com' }
+  #config.action_mailer.default_url_options = { :host => 'blowhiphop.herokuapp.com' }
   # Setup for production - deliveries, no errors raised
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
@@ -74,7 +75,7 @@ Blow::Application.configure do
   config.action_mailer.smtp_settings = {
       :address => "smtp.gmail.com",
       :port => 587,
-      :domain         => 'heroku.com',
+      :domain => 'heroku.com',
       :authentication => "plain",
       :enable_starttls_auto => true,
       :user_name => ENV["simanchala.pradhan"],
