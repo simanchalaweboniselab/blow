@@ -1,12 +1,18 @@
 ActiveAdmin.register Video do
   form :partial => "forms"
-  #index do
-  #  column :id
-  #  column :title
-  #  column :video_url
-  #  column :created_at
-  #  default_actions
-  #end
+  index do
+    column "Id" do |f|
+      link_to(f.id, admin_video_path(f))
+    end
+    column :title
+    column :video_url
+    column "Image" do |f|
+      image_tag(f.image_url, :size => "30x30" )
+    end
+    column :created_at
+    column :updated_at
+    default_actions
+  end
   #controller
   controller do
     def create
