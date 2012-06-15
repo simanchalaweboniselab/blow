@@ -66,7 +66,6 @@ Blow::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
   config.assets.precompile += %w( *.css *.js )
   config.action_mailer.default_url_options = { :host => 'blowhiphop.heroku.com' }
-  #config.action_mailer.default_url_options = { :host => 'blowhiphop.herokuapp.com' }
   # Setup for production - deliveries, no errors raised
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true

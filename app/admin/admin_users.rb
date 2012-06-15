@@ -6,6 +6,7 @@ ActiveAdmin.register AdminUser do
       f.buttons
     end
   end
+  #configure index view page
   index do
     column :email
     column :created_at

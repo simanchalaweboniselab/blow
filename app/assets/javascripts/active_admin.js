@@ -1,6 +1,6 @@
 //= require active_admin/base
 //= require jquery.tokeninput
-$(function() {
+$(function() { //token input
     $("#tag_tokens").tokenInput("/tags.json", {
         crossDomain: false,
         theme: "facebook"

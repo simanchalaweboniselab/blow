@@ -1,5 +1,7 @@
 ActiveAdmin.register Video do
+  # render form of Video(new)
   form :partial => "forms"
+  # index page
   index do
     column "Id" do |f|
       link_to(f.id, admin_video_path(f))

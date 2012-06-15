@@ -15,7 +15,6 @@ class VideosController < ApplicationController
   end
   def new
     @video = Video.new
-    #@tags = @video.tags.build
     @categories = Category.all
     respond_to do |format|
       format.html
@@ -36,7 +35,6 @@ class VideosController < ApplicationController
       vt.tag_id=tag.to_i
       vt.save
     end
-    #vt=@video.video_tags.new
     respond_to do |format|
       if @video.save
         format.html { redirect_to @video, notice: 'Video was successfully created.' }

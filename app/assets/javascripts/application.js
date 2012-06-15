@@ -14,7 +14,8 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
-$(function() {
+
+$(function() {  //token input
   $("#tag_tokens").tokenInput("/tags.json", {
     crossDomain: false,
     prePopulate: $(this).data("pre"),
