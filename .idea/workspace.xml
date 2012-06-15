@@ -31,10 +31,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apis_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="apis_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/apis_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="5" selection-start="2369" selection-end="2369" vertical-scroll-proportion="0.3220339">
+            <state line="99" column="56" selection-start="3888" selection-end="3888" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="7" selection-start="709" selection-end="709" vertical-scroll-proportion="0.66574204">
               <folding />
             </state>
           </provider>
@@ -77,7 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/assets/active_admin/components/_date_picker-b0633c76b409c81645b136e907c725ef.css" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/admin/admin_users.rb" />
@@ -90,9 +98,10 @@
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/controllers/videos_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/comment.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/apis_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120611131056_remove_video_id_to_tag.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120607102155_create_comments.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/apis_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -169,25 +178,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -569,7 +560,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/apis_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="5" selection-start="2369" selection-end="2369" vertical-scroll-proportion="0.3220339">
+        <state line="99" column="56" selection-start="3888" selection-end="3888" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="7" selection-start="709" selection-end="709" vertical-scroll-proportion="0.66574204">
           <folding />
         </state>
       </provider>

@@ -62,27 +62,42 @@ class Api::ApisController < ApplicationController
       format.json {render :json => {:video => @video }}
     end
   end
-  def video
-    video = Video.find(params[:video_id])
-    if video != nil
+                    #def video
+                    #  video = Video.find(params[:video_id])
+                    #  if video != nil
+                    #    respond_with do |format|
+                    #      format.json {render :json => {:success => true, :video => video}}
+                    #    end
+                    #  else
+                    #    respond_with do |format|
+                    #      format.json {render :json => {:success => false}}
+                    #    end
+                    #  end
+                    #end
+                    #def comment  #create comment
+                    #  comment = Comment.new
+                    #  if comment.create_comments(params[:body], params[:video_id])
+                    #    respond_with do |format|
+                    #      format.json {render :json => {:success => true, :message => "comment successfully posted"}}
+                    #    end
+                    #  else
+                    #    respond_with do |format|
+                    #      format.json {render :json => {:success => false}}
+                    #    end
+                    #  end
+                    #end
+  def create_admin      # sign_up api for user
+    user = AdminUser.new
+    user.email = params[:email]
+    user.password = params[:password]
+    if user.save
       respond_with do |format|
-        format.json {render :json => {:success => true, :video => video}}
+        format.json {render :json => {:success => true}}
       end
+      return
     else
       respond_with do |format|
-        format.json {render :json => {:success => false}}
-      end
-    end
-  end
-  def comment  #create comment
-    comment = Comment.new
-    if comment.create_comments(params[:body], params[:video_id])
-      respond_with do |format|
-        format.json {render :json => {:success => true, :message => "comment successfully posted"}}
-      end
-    else
-      respond_with do |format|
-        format.json {render :json => {:success => false}}
+        format.json {render :json => {:success => false }}
       end
     end
   end

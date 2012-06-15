@@ -14,6 +14,9 @@ Blow::Application.routes.draw do
     resources :apis do
       collection do
         post 'sign_in'
+        end
+      collection do
+        post 'create_admin'
       end
       collection do
         put 'reset_password'
