@@ -6,6 +6,7 @@ class VideosController < ApplicationController
       format.json { render json: @videos }
     end
   end
+   # COOL show action of video
   def show
     @video = Video.find(params[:id])
     respond_to do |format|

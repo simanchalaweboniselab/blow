@@ -2,7 +2,8 @@ class Api::ApisController < ApplicationController
 
   skip_before_filter :verify_authenticity_token
   respond_to :json  #respond in json format
-  def sign_in    # sign_in api for user
+  # DONE api for sign_in
+  def sign_in
     user = User.find_for_database_authentication(:email => params[:email])
     @video = Video.all
     if user.valid_password?(params[:password])
@@ -16,19 +17,21 @@ class Api::ApisController < ApplicationController
       end
     end
   end
+  # DONE api for sign_up  skip_before_filter :verify_authenticity_token
+
   def create      # sign_up api for user
     user = User.new
     if user.set_attributes(params[:email],params[:password],params[:first_name],params[:last_name])
       respond_with do |format|
         format.json {render :json => {:success => true,:auth_token => user.authentication_token, :first_name => user.first_name, :message => "first confirm account"}}
       end
-      return
     else
       respond_with do |format|
         format.json {render :json => {:success => false , :error => "enter correct information"}}
       end
     end
   end
+  #DONE api for reset_password
   def reset_password    # reset_password for user
     user = User.find_by_authentication_token( params[:auth_token])
     if user != nil
@@ -42,62 +45,53 @@ class Api::ApisController < ApplicationController
       end
     end
   end
-  def video_search   # video search
+  #DONE api for video search
+  def video_search
     @video = Video.where("title like ?", params[:title]+"%")
     respond_with do |format|
       format.json {render :json => {:video => @video, :v => @video }}
     end
   end
-  def tag_search   # video search on tag basis
+  #DONE api for video search on tag basis
+  def tag_search
     tag = Tag.find_by_name(params[:name])
     @video = tag.videos
     respond_with do |format|
       format.json {render :json => {:video => @video }}
     end
   end
-  def category_search   # video sarch on category basis
+  #DONE api for video search on category basis
+  def category_search
     category = Category.find_by_name(params[:name])
     @video = category.videos
     respond_with do |format|
       format.json {render :json => {:video => @video }}
     end
   end
-                    #def video
-                    #  video = Video.find(params[:video_id])
-                    #  if video != nil
-                    #    respond_with do |format|
-                    #      format.json {render :json => {:success => true, :video => video}}
-                    #    end
-                    #  else
-                    #    respond_with do |format|
-                    #      format.json {render :json => {:success => false}}
-                    #    end
-                    #  end
-                    #end
-                    #def comment  #create comment
-                    #  comment = Comment.new
-                    #  if comment.create_comments(params[:body], params[:video_id])
-                    #    respond_with do |format|
-                    #      format.json {render :json => {:success => true, :message => "comment successfully posted"}}
-                    #    end
-                    #  else
-                    #    respond_with do |format|
-                    #      format.json {render :json => {:success => false}}
-                    #    end
-                    #  end
-                    #end
-  def create_admin      # sign_up api for user
-    user = AdminUser.new
-    user.email = params[:email]
-    user.password = params[:password]
-    if user.save
+  #DONE api for display comments on particular video
+  def video
+    video = Video.find(params[:video_id])
+    if video != nil
+      comment = video.comments
       respond_with do |format|
-        format.json {render :json => {:success => true}}
+        format.json {render :json => {:success => true, :video => video, :comments => comment}}
       end
-      return
     else
       respond_with do |format|
-        format.json {render :json => {:success => false }}
+        format.json {render :json => {:success => false}}
+      end
+    end
+  end
+  #DONE api for create comment on particular video
+  def comment  #create comment
+    comment = Comment.new
+    if comment.create_comment(params[:body], params[:video_id])
+      respond_with do |format|
+        format.json {render :json => {:success => true, :message => "comment successfully posted"}}
+      end
+    else
+      respond_with do |format|
+        format.json {render :json => {:success => false}}
       end
     end
   end

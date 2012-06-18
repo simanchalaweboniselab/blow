@@ -1,37 +1,11 @@
 Blow::Application.routes.draw do
   ActiveAdmin.routes(self)
+  match "/admin/login" => "admin/admin_users#login", :via => :post
+
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
-
-  get "home/index"
-  get "home/show"
-  resources :categories
-  resources :videos
-  resources :tags
-  scope :module => "api" do
-    resources :apis do
-      collection do
-        post 'sign_in'
-        end
-      collection do
-        post 'create_admin'
-      end
-      collection do
-        put 'reset_password'
-      end
-      collection do
-        get 'video_search'
-      end
-      collection do
-        get 'tag_search'
-      end
-      collection do
-        get 'category_search'
-      end
-    end
-  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -83,10 +57,43 @@ Blow::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => 'home#index'
-
   # See how all your routes lay out with "rake routes"
-
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+  get "home/index"
+  get "home/show"
+  resources :categories
+  resources :videos
+  resources :tags
+  scope :module => "api" do
+    resources :apis do
+      collection do
+        post 'sign_in'
+      end
+      collection do
+        post 'create_admin'
+      end
+      collection do
+        put 'reset_password'
+      end
+      collection do
+        get 'video_search'
+      end
+      collection do
+        get 'tag_search'
+      end
+      collection do
+        get 'category_search'
+      end
+      collection do
+        get 'video'
+      end
+      collection do
+        post 'comment'
+      end
+    end
+  end
+  match "/admin_actives", :to => "admin/admin_users#admin_actives"
+
 end

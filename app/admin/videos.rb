@@ -1,7 +1,7 @@
 ActiveAdmin.register Video do
-  # render form of Video(new)
+  #DONE customize new video form
   form :partial => "forms"
-  # index page
+  # DONE Customize index page of video
   index do
     column "Id" do |f|
       link_to(f.id, admin_video_path(f))
@@ -17,6 +17,7 @@ ActiveAdmin.register Video do
   end
   #controller
   controller do
+    #DONE override create method of video
     def create
       @video = Video.new(params[:video])
       tag_tokens=params[:tag_tokens].split(",")

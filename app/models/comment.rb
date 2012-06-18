@@ -5,5 +5,6 @@ class Comment < ActiveRecord::Base
   def create_comment(body, video_id)
     self.body = body
     self.video_id = video_id
+    self.save
   end
 end

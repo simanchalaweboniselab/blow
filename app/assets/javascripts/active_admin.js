@@ -6,3 +6,11 @@ $(function() { //token input
         theme: "facebook"
     });
 });
+$(function(){
+    $("#active").live("click",function(){
+        var url = "/admin_actives";
+        var active = $(this).val()
+        var id= $(this).closest('tr').children('td.id').text();
+        $.get(url,{"active":active, "id":id});
+    });
+});

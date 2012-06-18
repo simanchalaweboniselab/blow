@@ -15,11 +15,10 @@
 //= require twitter/bootstrap
 //= require_tree .
 
-$(function() {  //token input
-  $("#tag_tokens").tokenInput("/tags.json", {
-    crossDomain: false,
-    prePopulate: $(this).data("pre"),
-    theme: "facebook"
-  });
-});
-
+//$(function() {  //token input
+//  $("#tag_tokens").tokenInput("/tags.json", {
+//    crossDomain: false,
+//    prePopulate: $(this).data("pre"),
+//    theme: "facebook"
+//  });
+//});
