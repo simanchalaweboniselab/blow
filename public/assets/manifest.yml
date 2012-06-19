@@ -1,10 +1,11 @@
 ---
 rails.png: rails-be8732dac73d845ac5b142c8fb5f9fb0.png
-active_admin.js: active_admin-1f28949b2386898ac9a6508671dd2317.js
+active_admin.js: active_admin-7eaca9dea92d3a0d3c03da16980b9d89.js
 apis.js: apis-3af39f1da6f167c2cbf453ed74daff3d.js
-application.js: application-9210c09c2ea29a0c06bf5390d4010e9f.js
+application.js: application-5a9bf614814d52631277f3053dff3067.js
 bootstrap.js: bootstrap-80eeb5ef51762ac8b53e8b06c09a4f13.js
 categories.js: categories-3af39f1da6f167c2cbf453ed74daff3d.js
+comments.js: comments-3af39f1da6f167c2cbf453ed74daff3d.js
 home.js: home-3af39f1da6f167c2cbf453ed74daff3d.js
 jquery.js: jquery-80fbe8ac84bd43154e7107ab7821d3c8.js
 jquery.min.js: jquery.min-fd728e7bd24a6c78c6da3fc301de57c5.js
@@ -16,6 +17,7 @@ apis.css: apis-7270767b2a9e9fff880aa5de378ca791.css
 application.css: application-32fe45612c5a00db51bf65e5368c8f70.css
 bootstrap_and_overrides.css: bootstrap_and_overrides-6a09dc2b17534f57f1b86a1768e0a1b9.css
 categories.css: categories-7270767b2a9e9fff880aa5de378ca791.css
+comments.css: comments-7270767b2a9e9fff880aa5de378ca791.css
 home.css: home-7270767b2a9e9fff880aa5de378ca791.css
 tags.css: tags-7270767b2a9e9fff880aa5de378ca791.css
 token-input-facebook.css: token-input-facebook-bdc88aa25b2a05c6c401bc025248d606.css

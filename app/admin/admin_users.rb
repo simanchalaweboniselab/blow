@@ -43,14 +43,14 @@ ActiveAdmin.register AdminUser do
         format.js
       end
     end
-    def login
-      logger.info "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-      admin_user = AdminUser.find_for_database_authentication(:email => params[:email])
-      if admin_user.valid_password?(params[:password])
-        format.html { redirect_to admin_dashboard_path , notice: 'signed successfully' }
-      else
-        format.html { render action: "admin/login" }
-      end
-    end
+    #def login
+    #  logger.info "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+    #  admin_user = AdminUser.find_for_database_authentication(:email => params[:email])
+    #  if admin_user.valid_password?(params[:password])
+    #    format.html { redirect_to admin_dashboard_path , notice: 'signed successfully' }
+    #  else
+    #    format.html { render action: "admin/login" }
+    #  end
+    #end
   end
 end

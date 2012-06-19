@@ -19,7 +19,8 @@ class User < ActiveRecord::Base
   #def admin?
   #  self.admin
   #end
-  def set_attributes(email,password,first_name,last_name)
+  #notes create new user
+  def set_attributes(email,password,first_name,last_name)#called by sign_in api in apis controller
     self.email = email
     self.password = password
     self.first_name = first_name

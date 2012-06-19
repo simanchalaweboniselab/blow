@@ -1,9 +1,11 @@
 Blow::Application.routes.draw do
   ActiveAdmin.routes(self)
-  match "/admin/login" => "admin/admin_users#login", :via => :post
-
 
   devise_for :admin_users, ActiveAdmin::Devise.config
+  #devise_for :admin_users, :controllers => { :sessions => "active_admin/devise/sessions" }
+  devise_scope :admin_users do
+    post "admin/login", :to => "active_admin/devise/sessions#create"
+  end
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
@@ -63,37 +65,35 @@ Blow::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
   get "home/index"
   get "home/show"
-  resources :categories
-  resources :videos
-  resources :tags
+  resources :categories do
+    collection do
+      get 'search'
+    end
+  end
+  resources :videos do
+    collection do
+      get 'search'
+    end
+  end
+  resources :tags do
+    collection do
+      get 'search'
+    end
+  end
+  resources :comments do
+    collection do
+      post 'comment'
+    end
+  end
   scope :module => "api" do
     resources :apis do
       collection do
         post 'sign_in'
       end
       collection do
-        post 'create_admin'
-      end
-      collection do
         put 'reset_password'
-      end
-      collection do
-        get 'video_search'
-      end
-      collection do
-        get 'tag_search'
-      end
-      collection do
-        get 'category_search'
-      end
-      collection do
-        get 'video'
-      end
-      collection do
-        post 'comment'
       end
     end
   end
   match "/admin_actives", :to => "admin/admin_users#admin_actives"
-
 end

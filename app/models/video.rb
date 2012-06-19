@@ -11,4 +11,9 @@ class Video < ActiveRecord::Base
   validates :category_id, :presence => true
   validates :video_url, :presence => true
   validates :image_url, :presence => true
+
+  def short_date
+  created_at.strftime("%d:%m:%y %H:%M:%S")
+  end
+
 end
