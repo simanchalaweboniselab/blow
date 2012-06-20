@@ -4,8 +4,12 @@ class Comment < ActiveRecord::Base
 
   #notes create new comment
   def create_comment(body, video_id) #called by comment api
-    self.body = body
-    self.video_id = video_id
-    self.save
+    if Video.find_by_id(video_id)
+      self.body = body
+      self.video_id = video_id
+      self.save
+    else
+      return nil
+    end
   end
 end

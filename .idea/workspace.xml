@@ -40,19 +40,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comments_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="comments_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0">
+            <state line="11" column="55" selection-start="549" selection-end="549" vertical-scroll-proportion="0.22884881">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="videos_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="comment.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="videos_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="708" selection-end="708" vertical-scroll-proportion="0.40268457">
+            <state line="20" column="0" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tags_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/tags_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="7" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -89,8 +107,6 @@
         <option value="$PROJECT_DIR$/app/admin/admin_users.rb" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/active_admin/devise/sessions_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/comment.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/admin/comments.rb" />
         <option value="$PROJECT_DIR$/app/models/video.rb" />
@@ -102,6 +118,8 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/apis_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/videos_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/comment.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
       </list>
     </option>
   </component>
@@ -222,6 +240,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -514,16 +550,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/tags_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="55" selection-start="368" selection-end="384" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="55" selection-start="519" selection-end="536" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/tags.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="288" selection-end="288" vertical-scroll-proportion="0.24965326" />
@@ -598,16 +624,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0">
+        <state line="20" column="0" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/tags_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="708" selection-end="708" vertical-scroll-proportion="0.40268457">
+        <state line="12" column="7" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="55" selection-start="549" selection-end="549" vertical-scroll-proportion="0.22884881">
           <folding />
         </state>
       </provider>
