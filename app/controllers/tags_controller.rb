@@ -1,10 +1,10 @@
 class TagsController < ApplicationController
   respond_to :json  #respond in json format
   def search
-    tag = Tag.find_by_name(params[:name])
-    if @video = tag.videos
+    if tag = Tag.find_by_name(params[:name])
+      @video = tag.videos
       respond_with do |format|
-        format.json {render :json => {:video => @video }}
+        format.json {render :json => {:success => true,:video => @video }}
       end
     else
       respond_with do |format|
