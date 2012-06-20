@@ -34,7 +34,7 @@
       <file leaf-file-name="apis_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/apis_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="17" selection-start="839" selection-end="895" vertical-scroll-proportion="0.47131148">
+            <state line="22" column="99" selection-start="935" selection-end="935" vertical-scroll-proportion="0.45081967">
               <folding />
             </state>
           </provider>
@@ -573,7 +573,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/apis_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="17" selection-start="839" selection-end="895" vertical-scroll-proportion="0.47131148">
+        <state line="22" column="99" selection-start="935" selection-end="935" vertical-scroll-proportion="0.45081967">
           <folding />
         </state>
       </provider>
