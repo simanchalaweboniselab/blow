@@ -20,7 +20,9 @@ class Api::ApisController < ApplicationController
   # DONE api for sign_up
   def create      # sign_up api for user
     user = User.new
-    if user.set_attributes(params[:email],params[:password],params[:first_name],params[:last_name])#calling method set_attributes of user model
+    logger.info "params#{params[:email]}"
+    raise "error"
+    if user.set_attributes(params[:email],params[:password],params[:first_name],params[:last_name]) || params[:email]!=nil && params[:password]!=nil#calling method set_attributes of user model
       respond_with do |format|
         format.json {render :json => {:success => true, :message => "first confirm account"}}
       end
@@ -32,8 +34,7 @@ class Api::ApisController < ApplicationController
   end
   #DONE api for reset_password
   def reset_password    # reset_password for user
-    user = User.find_by_authentication_token( params[:auth_token])
-    if user != nil
+    if user = User.find_by_authentication_token( params[:auth_token])
       user.update_attributes(:password => params[:password])
       respond_with do |format|
         format.json {render :json => {:success => true, :message => "password changed"}}

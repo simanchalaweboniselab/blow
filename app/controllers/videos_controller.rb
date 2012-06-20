@@ -3,28 +3,22 @@ class VideosController < ApplicationController
 
   #DONE api for video search
   def search
-    if @video = Video.where("title like ?", params[:title]+"%")
-      @video = @video.each do |v|
-        logger.info "gggggggggggggggggggggggggggggg#{v.created_at.class}"
-        v.created_at.in_time_zone.to_json = v.created_at.strftime("%d:%m:%y %H:%M:%S")
-      end
+    @video = Video.where("title like ?", params[:title]+"%")
+      #@video = @video.each do |v|
+      #  v.created_at.in_time_zone.to_json = v.created_at.strftime("%d:%m:%y %H:%M:%S")
+      #end
       respond_with do |format|
         format.json {render :json => {:video => @video }}
         #format.json {render :json =>  @video.to_json(:methods => :short_date, :except => [:created_at, :updated_at])}
 
       end
-    else
-      respond_with do |format|
-        format.json {render :json => {:success => false}}
-      end
-    end
   end
   #DONE api for all comments of particular video
   def show
-    if video = Video.find(params[:video_id])
-      if comment = video.comments
+    if video = Video.find_by_id(params[:video_id])
+      if @comment = video.comments
         respond_with do |format|
-          format.json {render :json => {:success => true, :video => video, :comments => comment}}
+          format.json {render :json => {:success => true, :video => video, :comments => @comment}}
         end
       else
         respond_with do |format|

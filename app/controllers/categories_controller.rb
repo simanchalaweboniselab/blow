@@ -7,7 +7,7 @@ class CategoriesController < ApplicationController
     if category = Category.find_by_name(params[:name])
       @video = category.videos
       respond_with do |format|
-        format.json {render :json => {:video => @video }}
+        format.json {render :json => {:success => true, :video => @video }}
       end
     else
       respond_with do |format|

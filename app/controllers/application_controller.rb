@@ -12,4 +12,7 @@ class ApplicationController < ActionController::Base
   #    redirect_to root_url
   #  end
   #end
+  #def after_sign_in_path
+  #  "/admin"
+  #end
  end
