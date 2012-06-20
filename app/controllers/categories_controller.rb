@@ -2,12 +2,17 @@ class CategoriesController < ApplicationController
   #before_filter :authenticate_user!
   #before_filter :require_admin
   respond_to :json  #respond in json format
-  ##DONE api for video search on tag basis
+                    ##DONE api for video search on tag basis
   def search
-    category = Category.find_by_name(params[:name])
-    @video = category.videos
-    respond_with do |format|
-      format.json {render :json => {:video => @video }}
+    if category = Category.find_by_name(params[:name])
+      @video = category.videos
+      respond_with do |format|
+        format.json {render :json => {:video => @video }}
+      end
+    else
+      respond_with do |format|
+        format.json {render :json => {:success => false}}
+      end
     end
   end
   #def index

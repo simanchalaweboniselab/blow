@@ -2,12 +2,42 @@ Blow::Application.routes.draw do
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
-  #devise_for :admin_users, :controllers => { :sessions => "active_admin/devise/sessions" }
-  devise_scope :admin_users do
-    post "admin/login", :to => "active_admin/devise/sessions#create"
-  end
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+
+  get "home/index"
+  get "home/show"
+  resources :categories do
+    collection do
+      get 'search'
+    end
+  end
+  resources :videos do
+    collection do
+      get 'search'
+    end
+  end
+  resources :tags do
+    collection do
+      get 'search'
+    end
+  end
+  resources :comments do
+    collection do
+      post 'comment'
+    end
+  end
+  scope :module => "api" do
+    resources :apis do
+      collection do
+        post 'sign_in'
+      end
+      collection do
+        put 'reset_password'
+      end
+    end
+  end
+  match "/admin_actives", :to => "admin/admin_users#admin_actives"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -63,37 +93,5 @@ Blow::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
-  get "home/index"
-  get "home/show"
-  resources :categories do
-    collection do
-      get 'search'
-    end
-  end
-  resources :videos do
-    collection do
-      get 'search'
-    end
-  end
-  resources :tags do
-    collection do
-      get 'search'
-    end
-  end
-  resources :comments do
-    collection do
-      post 'comment'
-    end
-  end
-  scope :module => "api" do
-    resources :apis do
-      collection do
-        post 'sign_in'
-      end
-      collection do
-        put 'reset_password'
-      end
-    end
-  end
-  match "/admin_actives", :to => "admin/admin_users#admin_actives"
+
 end
