@@ -20,9 +20,7 @@ class Api::ApisController < ApplicationController
   # DONE api for sign_up
   def create      # sign_up api for user
     user = User.new
-    logger.info "params#{params[:email]}"
-    raise "error"
-    if user.set_attributes(params[:email],params[:password],params[:first_name],params[:last_name]) || params[:email]!=nil && params[:password]!=nil#calling method set_attributes of user model
+    if user.set_attributes(params[:email],params[:password],params[:first_name],params[:last_name])#calling method set_attributes of user model
       respond_with do |format|
         format.json {render :json => {:success => true, :message => "first confirm account"}}
       end
