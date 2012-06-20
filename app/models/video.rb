@@ -12,7 +12,7 @@ class Video < ActiveRecord::Base
   validates :video_url, :presence => true
   validates :image_url, :presence => true
 
-  def short_date
+  def created_date
   created_at.strftime("%d:%m:%y %H:%M:%S")
   end
 

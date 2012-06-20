@@ -34,16 +34,25 @@
       <file leaf-file-name="apis_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/apis_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="22" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+            <state line="10" column="57" selection-start="366" selection-end="415" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="videos_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="0" selection-start="2732" selection-end="2732" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="videos_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="27" selection-start="830" selection-end="830" vertical-scroll-proportion="0.041608877">
+            <state line="10" column="0" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -52,16 +61,7 @@
       <file leaf-file-name="video.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/video.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="40" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0">
+            <state line="15" column="42" selection-start="516" selection-end="556" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -76,10 +76,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tags_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="comments_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="23" selection-start="469" selection-end="561" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tags_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/tags_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="6" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
+            <state line="11" column="9" selection-start="377" selection-end="377" vertical-scroll-proportion="0.22884881">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categories_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="42" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,7 +127,6 @@
         <option value="$PROJECT_DIR$/app/admin/admin_users.rb" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/active_admin/devise/sessions_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/tags_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
@@ -117,17 +134,18 @@
         <option value="$PROJECT_DIR$/app/controllers/categories_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/admin/comments.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/apis_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/video.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/apis_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/videos_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/tags_controller.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1359" />
-    <option name="y" value="-5" />
-    <option name="width" value="1602" />
-    <option name="height" value="906" />
+    <option name="x" value="1360" />
+    <option name="y" value="24" />
+    <option name="width" value="1600" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -473,14 +491,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1359" y="-5" width="1602" height="906" extended-state="6" />
+    <frame x="1360" y="24" width="1600" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18" sideWeight="0.9625323" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18258065" sideWeight="0.9625323" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -552,112 +570,84 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/admin/admin_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="7" selection-start="475" selection-end="475" vertical-scroll-proportion="0.42281878">
-          <folding />
-        </state>
+        <state line="21" column="7" selection-start="475" selection-end="475" vertical-scroll-proportion="0.42281878" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/dashboards.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="55" selection-start="215" selection-end="215" vertical-scroll-proportion="0.08053691">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="0" selection-start="2732" selection-end="2732" vertical-scroll-proportion="0.8543689">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="86" selection-start="288" selection-end="288" vertical-scroll-proportion="0.10402219">
-          <folding />
-        </state>
+        <state line="4" column="55" selection-start="215" selection-end="215" vertical-scroll-proportion="0.08053691" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="48" selection-start="165" selection-end="165" vertical-scroll-proportion="0.10402219">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="42" selection-start="206" selection-end="206" vertical-scroll-proportion="0.08053691">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/active_admin/devise/sessions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="48" selection-start="165" selection-end="165" vertical-scroll-proportion="0.10402219" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20120607102038_create_videos.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="193" selection-end="193" vertical-scroll-proportion="0.14563107">
-          <folding />
-        </state>
+        <state line="7" column="0" selection-start="193" selection-end="193" vertical-scroll-proportion="0.14563107" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/videos.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="14" selection-start="492" selection-end="492" vertical-scroll-proportion="0.41608876">
-          <folding />
-        </state>
+        <state line="20" column="14" selection-start="492" selection-end="492" vertical-scroll-proportion="0.41608876" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="30" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/active_admin/devise/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/apis_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="57" selection-start="366" selection-end="415" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="0" selection-start="2732" selection-end="2732" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="42" selection-start="516" selection-end="556" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/comments.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+        <state line="7" column="22" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="42" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="23" selection-start="469" selection-end="561" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tags_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/apis_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/video.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="40" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/videos_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="27" selection-start="830" selection-end="830" vertical-scroll-proportion="0.041608877">
+        <state line="11" column="9" selection-start="377" selection-end="377" vertical-scroll-proportion="0.22884881">
           <folding />
         </state>
       </provider>
