@@ -1,4 +1,5 @@
 ActiveAdmin.register Comment, :as => "VideoComment" do
+  filter :video, :label => 'Video'
   index do
       column "Id" do |f|
         link_to(f.id, admin_video_comment_path(f))

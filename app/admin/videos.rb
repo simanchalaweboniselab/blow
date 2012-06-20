@@ -1,4 +1,7 @@
 ActiveAdmin.register Video do
+  filter :category, :label => 'Category'
+  filter :video_url
+  #filter :created_at
   #DONE customize new video form
   form :partial => "forms"
   # DONE Customize index page of video

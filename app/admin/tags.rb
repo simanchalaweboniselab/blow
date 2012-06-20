@@ -1,4 +1,5 @@
 ActiveAdmin.register Tag do
+  filter :name
   controller do
     #def index
     #  @tags = Tag.where("name like ?", "%#{params[:q]}%")

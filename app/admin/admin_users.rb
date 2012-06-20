@@ -1,4 +1,5 @@
 ActiveAdmin.register AdminUser do
+  filter :email
   #DONE customize the form of new admin user
   form do |f|
     f.inputs "Admin user" do

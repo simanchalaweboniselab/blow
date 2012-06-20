@@ -8,6 +8,10 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :first_name, :last_name, :authentication_token
   before_save :reset_authentication_token
 
+  validates :email, :presence => true, :uniqueness => true
+  validates :password, :presence => true,
+            :length => {:minimum => 6, :maximum => 40}
+
   def self.find_for_facebook_oauth(access_token, signed_in_resource=nil)
     data = access_token.extra.raw_info
     if user = self.find_by_email(data.email)
@@ -26,5 +30,20 @@ class User < ActiveRecord::Base
     self.first_name = first_name
     self.last_name = last_name
     self.save
+  end
+  def is_a_valid_email?(email)
+    # Check the number of '@' signs.
+    if email =~ /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i then
+      return true
+    else
+      return false
+    end
+  end
+  def check_password(password)
+    if password.length >= 6
+      return true
+    else
+      false
+    end
   end
 end
