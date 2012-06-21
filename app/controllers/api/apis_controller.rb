@@ -45,14 +45,20 @@ class Api::ApisController < ApplicationController
                     #DONE api for reset_password
   def reset_password    # reset_password for user
     if user = User.find_by_authentication_token( params[:authentication_token])
-      if user.check_password(params[:password])
-        user.update_attributes(:password => params[:password])
-        respond_with do |format|
-          format.json {render :json => {:success => true, :message => "password changed"}}
+      if user.valid_password?(params[:old_password])
+        if user.check_password(params[:new_password])
+          user.update_attributes(:password => params[:new_password])
+          respond_with do |format|
+            format.json {render :json => {:success => true, :message => "password changed"}}
+          end
+        else
+          respond_with do |format|
+            format.json {render :json => {:success => false , :error => "password not less than 6 character."}}
+          end
         end
       else
         respond_with do |format|
-          format.json {render :json => {:success => false , :error => "password not less than 6 character."}}
+          format.json {render :json => {:success => false , :error => "enter correct old password."}}
         end
       end
     else

@@ -34,7 +34,7 @@
       <file leaf-file-name="apis_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/apis_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="160" selection-start="431" selection-end="543" vertical-scroll-proportion="0.20491803">
+            <state line="59" column="32" selection-start="2684" selection-end="2743" vertical-scroll-proportion="0.7336066">
               <folding />
             </state>
           </provider>
@@ -173,6 +173,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -497,11 +515,6 @@
         <state line="1" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.020134227" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="22" selection-start="1628" selection-end="1628" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="237" selection-end="237" vertical-scroll-proportion="0.10402219">
@@ -516,9 +529,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="22" selection-start="1628" selection-end="1628" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/apis_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="160" selection-start="431" selection-end="543" vertical-scroll-proportion="0.20491803">
+        <state line="59" column="32" selection-start="2684" selection-end="2743" vertical-scroll-proportion="0.7336066">
           <folding />
         </state>
       </provider>
