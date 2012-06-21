@@ -16,6 +16,12 @@ Blow::Application.routes.draw do
     collection do
       get 'search'
     end
+    collection do
+      get 'comments'
+    end
+    collection do
+      get 'video_views'
+    end
   end
   resources :tags do
     collection do
@@ -33,8 +39,9 @@ Blow::Application.routes.draw do
         post 'sign_in'
       end
       collection do
-        put 'reset_password'
+        post 'reset_password'
       end
+
     end
   end
   match "/admin_actives", :to => "admin/admin_users#admin_actives"

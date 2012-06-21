@@ -1,6 +1,9 @@
 <%= semantic_form_for [:admin, @video] do |f| %>
     <%= f.inputs :category, :title, :image_url, :video_url %>
-    <%= f.label :tag_tokens, "Tags" %><br />
+    <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Featured:</b>&nbsp;&nbsp;
+    <%= f.radio_button :featured, true %> <%= f.label :featured, "Yes" %>
+    <%= f.radio_button :featured, false %> <%= f.label :featured, "No" %><br />
+    <b><%= f.label :tag_tokens, "Tags" %></b>
     <%= text_field_tag :tag_tokens,"", "data-pre" => @video.tags.map(&:attributes).to_json %>
     <%= f.buttons :commit %>
 <% end %>

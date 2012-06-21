@@ -1,6 +1,7 @@
 ActiveAdmin.register Video do
   filter :category, :label => 'Category'
   filter :video_url
+  filter :featured, :as => :check_boxes
   #filter :created_at
   #DONE customize new video form
   form :partial => "forms"
@@ -14,8 +15,9 @@ ActiveAdmin.register Video do
     column "Image" do |f|
       image_tag(f.image_url, :size => "30x30" )
     end
-    column :created_at
-    column :updated_at
+    column :featured
+    column :views
+    column :likes
     default_actions
   end
   #controller

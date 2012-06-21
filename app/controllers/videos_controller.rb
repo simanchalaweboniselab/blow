@@ -14,7 +14,7 @@ class VideosController < ApplicationController
     end
   end
   #DONE api for all comments of particular video
-  def show
+  def comments
     if video = Video.find_by_id(params[:video_id])
       @comment = video.comments
       if @comment.empty?
@@ -24,8 +24,20 @@ class VideosController < ApplicationController
       else
         respond_with do |format|
           format.json {render :json => {:success => true, :video => video, :comments => @comment}}
-
         end
+      end
+    else
+      respond_with do |format|
+        format.json {render :json => {:success => false}}
+      end
+    end
+  end
+  #DONE api for how many times views the video/calculate viewers
+  def video_views
+    if video = Video.find_by_id(params[:video_id])
+      video.update_attributes(:views => video.views+1)
+      respond_with do |format|
+        format.json {render :json => {:success => true}}
       end
     else
       respond_with do |format|

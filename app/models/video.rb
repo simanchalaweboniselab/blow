@@ -3,7 +3,7 @@ class Video < ActiveRecord::Base
   has_many :video_tags, :dependent => :destroy
   has_many :tags, :through => :video_tags
   belongs_to :category
-  attr_accessible :category_id, :image_url, :title, :video_url,:tags, :video_tags, :tag_ids
+  attr_accessible :category_id, :image_url, :title, :video_url,:tags, :video_tags, :tag_ids, :featured, :views, :likes
   #attr_accessible :name, :tags_attributes
   #accepts_nested_attributes_for :tags, :allow_destroy => true
 
