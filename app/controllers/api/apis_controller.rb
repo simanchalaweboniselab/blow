@@ -4,12 +4,17 @@ class Api::ApisController < ApplicationController
   respond_to :json  #respond in json format
                     # DONE api for sign_in
   def sign_in
-    user = User.find_for_database_authentication(:email => params[:email])
-    @video = Video.all
-    if user.valid_password?(params[:password])
-      respond_with do |format|
-        format.json {render :json => {:video => @video,:authentication_token => user.authentication_token, :first_name => user.first_name, :last_name => user.last_name  }}
-        #format.json {render :json => {:success => true,:auth_token => user.authentication_token, :first_name => user.first_name, :last_name => user.last_name }}
+    if user = User.find_for_database_authentication(:email => params[:email])
+      if user.valid_password?(params[:password])
+        @video = Video.all
+        respond_with do |format|
+          format.json {render :json => {:video => @video, :authentication_token => user.authentication_token, :first_name => user.first_name, :last_name => user.last_name }}
+          #format.json {render :json => {:success => true,:auth_token => user.authentication_token, :first_name => user.first_name, :last_name => user.last_name }}
+        end
+      else
+        respond_with do |format|
+          format.json {render :json => {:success => false , :error => "Invalid email or password"}}
+        end
       end
     else
       respond_with do |format|
