@@ -22,6 +22,9 @@ Blow::Application.routes.draw do
     collection do
       get 'video_views'
     end
+    collection do
+      get "most_popular_videos"
+    end
   end
   resources :tags do
     collection do
@@ -95,7 +98,7 @@ Blow::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'home#index'
+  root :to => 'admin/dashboard#index'
   # See how all your routes lay out with "rake routes"
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
