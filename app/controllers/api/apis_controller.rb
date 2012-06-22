@@ -29,7 +29,7 @@ class Api::ApisController < ApplicationController
       if user.check_password(params[:password]) #check password length
         if user.set_attributes(params[:email],params[:password],params[:first_name],params[:last_name])#calling method set_attributes of user model
           respond_with do |format|
-            format.json {render :json => {:success => true, :message => "first confirm account"}}
+            format.json {render :json => {:success => true, :message => "You have successfully signed_up"}}
           end
         else
           respond_with do |format|
